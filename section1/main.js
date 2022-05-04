@@ -20,3 +20,13 @@ console.log(a1_1);
 const a1_2 = {...userA,...userB}
 console.log(a1_2);
 
+
+// Q2 特定の値のみで新しい配列を作る。
+const q2 = ['aa','bb','cc','dd','ee','ff','gg'];
+
+// 方法１ filterを使う
+const a2_1 = q2.filter((val) => {
+    if(val === 'ff' || val === 'ee') return val;
+})
+
+console.log(a2_1);
