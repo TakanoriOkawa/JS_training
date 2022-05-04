@@ -142,3 +142,21 @@ const q9 = {
 
 delete q9.x; 
 console.log(q9);
+
+
+// Q10 id番号が若い順にソートしたオブジェクトを出力
+console.log("Q10🎉");
+
+const q10 = [
+  {id:2,name:'kenji'},
+  {id:1,name:'morita'},
+  {id:4,name:'uro'},
+  {id:3,name:'ken'}
+];
+
+// sortメソッドは破壊的なメソッドである。オブジェクト本体が書き変わる
+q10.sort(function(a,b){
+  return (a.id < b.id) ? -1 : 1;
+})
+
+console.log(q10);
