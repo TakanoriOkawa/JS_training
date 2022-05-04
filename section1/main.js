@@ -41,3 +41,10 @@ console.log(a2_1);
 console.log("Q3🎉");
 const q3 = ['aa','bb','cc','dd'];
 
+q3.forEach(val => console.log(val));
+
+// Q4 配列の中身に、index値を足した文字列を表示 'a0'や'b1'など
+console.log("Q4🎉");
+const q4 = ['aa','bb','cc','dd'];
+
+q4.forEach((val,index) => console.log(index + val));
