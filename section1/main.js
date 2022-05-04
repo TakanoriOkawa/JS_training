@@ -68,5 +68,23 @@ isArray(q5_2); // false
 // typeofだと配列もオブジェクトも「Object」として返るのでisArrayを使う
 
 
+// Q6 変数xが定義されていない場合、1と2が実行されるかどうか
+console.log("Q6🎉");
+
+//1
+if (typeof x === 'undefined') {
+  console.log("Q6_1実行")
+}
+
+//2
+if(x === undefined){
+  console.log("Q6_2実行")
+}
+
+// 1のみが実行される
+// typeofは変数がない場合エラーを返さない。
+// そもそもこのような値チェックは避けるべきである。
+// グローバルの値チェックはfor...in？
+
 
 
