@@ -1,6 +1,8 @@
 'use strict';
 
 // Q1 オブジェクト同士のマージ
+console.log("Q1🎉");
+
 const userA = {
   id: 1,
   name: 'tanaka',
@@ -25,6 +27,7 @@ console.log(a1_2);
 
 
 // Q2 特定の値のみで新しい配列を作る。
+console.log("Q2🎉");
 const q2 = ['aa','bb','cc','dd','ee','ff','gg'];
 
 // 方法１ filterを使う
@@ -35,7 +38,6 @@ console.log(a2_1);
 
 
 // Q3 配列の中身を個別にコンソール出力
-
+console.log("Q3🎉");
 const q3 = ['aa','bb','cc','dd'];
 
-q3.forEach((val) => console.log(val));
