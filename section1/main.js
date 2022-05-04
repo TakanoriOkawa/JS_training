@@ -1,3 +1,5 @@
+'use strict';
+
 // Q1 オブジェクト同士のマージ
 const userA = {
   id: 1,
