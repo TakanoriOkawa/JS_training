@@ -13,10 +13,10 @@ const userB = {
 }
 
 // 方法1
-const user = Object.assign({}, userA, userB);
-console.log(user);
+const a1_1 = Object.assign({}, userA, userB);
+console.log(a1_1);
 
 // 方法2
-const margeUser = {...userA,...userB}
-console.log(margeUser);
+const a1_2 = {...userA,...userB}
+console.log(a1_2);
 
