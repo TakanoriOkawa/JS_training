@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 // Q1 オブジェクト同士のマージ
 console.log("Q1🎉");
@@ -131,3 +131,14 @@ console.log(q8.join('')); // 空文字にすることで配列の文字列をそ
 let a8_2 = "";
 q8.forEach(val => a8_2 += val);
 console.log(a8_2);
+
+// Q9 オブジェクトの特定のキーを削除する
+console.log("Q9🎉");
+
+const q9 = {
+  x: 10,
+  y: 20,
+}
+
+delete q9.x; 
+console.log(q9);
