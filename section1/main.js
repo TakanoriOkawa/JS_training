@@ -48,3 +48,25 @@ console.log("Q4🎉");
 const q4 = ['aa','bb','cc','dd'];
 
 q4.forEach((val,index) => console.log(index + val));
+
+
+// Q5 任意の配列が配列かを評価する true
+console.log("Q5🎉");
+
+const q5 = ['aa','bb','cc','dd','ee'];
+const q5_2 = {id:1,name:'tanaka'};
+
+// 方法1
+console.log(Array.isArray(q5));
+
+// 配列かどうかを判定する関数
+const isArray = (param) => console.log(Array.isArray(param));
+
+isArray(q5); // true
+isArray(q5_2); // false
+
+// typeofだと配列もオブジェクトも「Object」として返るのでisArrayを使う
+
+
+
+
