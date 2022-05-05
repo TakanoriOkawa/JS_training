@@ -203,3 +203,21 @@ const q13 = (...val) => {
 }
 // スプレッド構文
 console.log(q13(1,2,3));
+
+
+
+
+
+// Q15 配列の0〜2番目の要素をそれぞれ red, green, yellowに置き換える
+console.log("Q15🎉");
+
+const q15 = ['a1','a2','a3','a4','a5']
+
+const tekitou = ['red', 'green', 'yellow'];
+// spliceで置き換え
+// 第一引数・・・配列を変更する先頭の位置
+// 第二引数・・・取り除く個数
+// スプレッド構文で渡せる
+q15.splice(0,3, ...tekitou);
+
+console.log(q15);
