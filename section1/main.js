@@ -223,3 +223,17 @@ const tekitou = ['red', 'green', 'yellow'];
 const a15 = q15.splice(0,3, ...tekitou);
 console.log(q15); // 取り除き後
 console.log(a15); // 返り値
+
+
+
+// Q16 配列のインデックス2〜4の要素を取り出し、配列として出力
+// 実行された後のarrayの要素を教えてください
+console.log("Q16🎉");
+
+const q16 = ['a1','a2','a3','a4','a5'];
+
+// slice。非破壊メソッド
+const a16 = q16.slice(1,4);
+
+console.log(a16); // 配列の一部を取り出す
+console.log(q16); // 実行後の配列
