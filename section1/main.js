@@ -218,6 +218,8 @@ const tekitou = ['red', 'green', 'yellow'];
 // 第一引数・・・配列を変更する先頭の位置
 // 第二引数・・・取り除く個数
 // スプレッド構文で渡せる
-q15.splice(0,3, ...tekitou);
+// 返却されるのは取り除かれた値の配列
 
-console.log(q15);
+const a15 = q15.splice(0,3, ...tekitou);
+console.log(q15); // 取り除き後
+console.log(a15); // 返り値
