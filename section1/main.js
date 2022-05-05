@@ -173,3 +173,23 @@ console.log("Q11🎉");
 // 変数はあらかじめ宣言しておくか、直接let,constを指定する
 const [q11_a = 5,  q11_b = 7] = [1];
 console.log(q11_a, q11_b);
+
+
+
+
+// Q12 next()で返り値が1増える関数
+console.log("Q12🎉");
+
+// 増えていく返り値はグローバルに定義すると、予期せぬバグになるので
+// 関数内に定義する クロージャー
+const useCount = val => {
+  let count = 0;
+
+  return function() {
+    count++;
+    return val + count;
+  }
+}
+const next = useCount(8);
+console.log(next());
+console.log(next());
