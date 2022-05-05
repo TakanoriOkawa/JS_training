@@ -193,3 +193,13 @@ const useCount = val => {
 const next = useCount(8);
 console.log(next());
 console.log(next());
+
+
+// Q13 q13(1,2,3)を実行したら引数が全て配列で返る関数
+console.log("Q13🎉");
+
+const q13 = (...val) => {
+  return val
+}
+// スプレッド構文
+console.log(q13(1,2,3));
