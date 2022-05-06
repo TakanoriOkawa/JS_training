@@ -237,3 +237,17 @@ const a16 = q16.slice(1,4);
 
 console.log(a16); // 配列の一部を取り出す
 console.log(q16); // 実行後の配列
+
+
+
+// Q17 全ての要素を"/"で結合した文字列を出力し、その文字列を'/'区切りで配列に直す
+const q17 = ['a1','a2','a3','a4','a5']
+console.log("Q17🎉");
+
+const a17 = q17.join('/');
+console.log(a17);
+// 区切り文字列を使って分割する
+const a17_2 = a17.split('/');
+console.log(a17_2);
+
+
