@@ -42,3 +42,11 @@ const newArray3 = array3;
 console.log(newArray2 === array3); // false
 console.log(newArray3 === array3); // true
 
+
+// 配列の結合 concatを使わない
+let array4 = ['日本','アメリカ','中国'];
+const array5 = ['イギリス','ドイツ','オーストラリア'];
+
+// 配列の結合
+array4 = [...array4, ...array5];
+console.log(array4);
