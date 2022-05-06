@@ -12,7 +12,33 @@ function sum(x,y,z){
 }
 
 // 配列の中身を個別の値に展開して引数に渡せる
-const result = sum(...array1);
+const result1 = sum(...array1);
 
-console.log("spread1📗", result)
+console.log("spread1📗", result1)
+
+// 2 配列にスプレッド構文を使うケース
+// 新しい配列を作る場合、push,splice,concatなどを使う必要があるが、
+// スプレッド構文を使えば、より簡潔に記述できる
+
+
+// 既存の配列の一部を使って新しい配列を作る
+const array2 = ['apple','orange'];
+const newArray = ['ぶどう','さくらんぼ',...array2,'いちご'];
+
+console.log(newArray);
+
+
+// 配列を複製する 異なる参照先になる複製ができる
+
+const array3 = ['サッカー', '野球', 'スキー'];
+
+const newArray2 = [...array3];
+newArray2.push('テニス');
+
+console.log(newArray2, array3);
+
+const newArray3 = array3;
+
+console.log(newArray2 === array3); // false
+console.log(newArray3 === array3); // true
 
