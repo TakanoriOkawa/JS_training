@@ -50,3 +50,17 @@ const array5 = ['イギリス','ドイツ','オーストラリア'];
 // 配列の結合
 array4 = [...array4, ...array5];
 console.log(array4);
+
+// 3 オブジェクトのスプレッド構文
+// 配列同じ様なことができる
+// Object.assignと同じ挙動
+const dict = { 'name': 'yamada', 'age': 20 };
+const dict2 = { 'name': 'nakata', 'age': 40 };
+const dict3 = { 'item': 'macbook' };
+
+const newObject1 = {...dict,...dict3};
+const newObject2 = {...dict,...dict2};
+
+console.log("📕",newObject1);
+console.log("📘",newObject2); //同じプロパティがあった場合、後からの値で上書きされる
+
