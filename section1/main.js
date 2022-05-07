@@ -266,3 +266,26 @@ const a18 = () => {
 
 const a18_2 = q18[a18()]; // 結果の返り値を元に、配列の要素を出力
 console.log(a18_2, q18);
+
+
+// Q19 クラス
+console.log("Q19🎉");
+
+class Who{
+  constructor(name){
+    this.name = name;
+  }
+  // インスタンスメソッド・・クラスの中で定義する場合
+  // getName(){
+  //   return "Myname is " + this.name;
+  // }
+}
+
+// インスタンスメソッド、prototypeで指定する場合
+Who.prototype.getName = function() {
+  return "Myname is " + this.name;
+} 
+
+const a19 = new Who('morita');
+const a19_2 = a19.getName();
+console.log(a19_2);
