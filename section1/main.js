@@ -289,3 +289,29 @@ Who.prototype.getName = function() {
 const a19 = new Who('morita');
 const a19_2 = a19.getName();
 console.log(a19_2);
+
+
+// Q20 浅いコピー（shallow copy) 深いコピー（deep copy）
+console.log("Q20🎉");
+
+// shallow copy
+// プロパティや要素だけのコピーでその先の参照までコピーしない
+// 
+let q20_1 = [{x:2}];
+let q20_2 = [].concat(q20_1); // concatメソッドはshallow copyなので参照先はコピーされない
+console.log(q20_1 === q20_2); // false
+
+q20_2.push({z:100});
+
+console.log("shallow copy", q20_1);
+console.log("shallow copy", q20_2);
+
+let q20_3 = q20_1; // こっちはdeep copy
+
+q20_3.push({y:10}); // deep copyなので参照先もコピーされている
+// よって追加したyプロパティはq20_1にも反映さえる
+
+console.log(q20_3 === q20_1); // true
+
+console.log("deep copy", q20_1);
+console.log("deep copy", q20_3);
