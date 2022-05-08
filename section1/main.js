@@ -296,22 +296,21 @@ console.log("Q20🎉");
 
 // shallow copy
 // プロパティや要素だけのコピーでその先の参照までコピーしない
-// 
+// 中身だけのコピー
 let q20_1 = [{x:2}];
 let q20_2 = [].concat(q20_1); // concatメソッドはshallow copyなので参照先はコピーされない
 console.log(q20_1 === q20_2); // false
 
-q20_2.push({z:100});
+
+// 参照先が同じなのはオブジェクトの話で、例えばq20_2にpushして新たにオブジェクトを追加した場合、それはコピーされない
+q20_2.push({z:100}); // q20_2のみに新しい値が入る
+
+
+// q20_2に最初のオブジェクトに対してプロパティを追加した場合、q20_1の値も変わる
+q20_2[0].y = 9999;
 
 console.log("shallow copy", q20_1);
 console.log("shallow copy", q20_2);
 
-let q20_3 = q20_1; // こっちはdeep copy
 
-q20_3.push({y:10}); // deep copyなので参照先もコピーされている
-// よって追加したyプロパティはq20_1にも反映さえる
 
-console.log(q20_3 === q20_1); // true
-
-console.log("deep copy", q20_1);
-console.log("deep copy", q20_3);
