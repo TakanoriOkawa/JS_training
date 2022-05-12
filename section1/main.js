@@ -312,5 +312,17 @@ q20_2[0].y = 9999;
 console.log("shallow copy", q20_1);
 console.log("shallow copy", q20_2);
 
+// Q21
+console.log("Q21🎉");
+
+let array = ['e','a','k','B','c'];
+
+array.sort();
+console.log(array,"🎉"); // B a c e k
+
+
+
+
+
 
 
